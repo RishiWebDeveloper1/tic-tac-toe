@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <header>
+        <div class="logo">MARVELS</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li style=" width: 50px;">
+                    <a href="../index.html" class="active" style=" width: 40px;">HoMe</a>
+                </li>
+                <li style="width: 58px;">
+                    <a href="../html/contact.html" style="width: 48px;">Event</a>
+                </li>
+                <li style="width: 55px;">
+                    <a href="../html/about.html" style="width: 45px;">About</a>
+                </li>
+                <li style="width: 45px;">
+                    <a href="../html/help.html" style="width: 35px;">More</a>
+                </li>
+           <!-- <li>
+                    <a href="">About</a>
+                </li> -->
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <main>
+        <div class="megacontainer">
+            <div class="score-board">
+                <div class="player" id="playerBox1">
+                    <div class="player-name">
+                        <div class="player-image" style="width: 17px;">
+                            <img src="images/cross.png" alt="">
+                        </div>
+                        Player 1
+                    </div>
+                    <div class="score" id="playerScore1">
+                        0
+                    </div>
+                </div>
+                <div class="player" id="playerBox2">
+                    <div class="player-name">
+                        <div class="player-image" style="width: 20px;">
+                            <img src="images/circle.png" alt="">
+                        </div>
+                        Player 2
+                    </div>
+                    <div class="score" id="playerScore2">
+                        0
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mainBox">
+                    <div class="box">
+                        <div class="img-box" id="box1" onclick="boxShow1('box1')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box2" onclick="boxShow1('box2')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box3" onclick="boxShow1('box3')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box4" onclick="boxShow1('box4')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box5" onclick="boxShow1('box5')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box6" onclick="boxShow1('box6')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box7" onclick="boxShow1('box7')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box8" onclick="boxShow1('box8')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box" id="box9" onclick="boxShow1('box9')">
+                            <!-- <img src="images\cross.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="result-show">
+                    <div class="winner-image" id="winImg">
+                        <!-- <img src="images\cross.png" alt=""> -->
+                    </div>
+                    <div class="winner-name" id="winName">
+                    </div>
+                </div>
+                <div class="button-box">
+                    <div class="reset-box" onclick="gameReset()">
+                        <div class="reset">Reset</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
