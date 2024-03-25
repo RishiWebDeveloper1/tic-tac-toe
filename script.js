@@ -27,8 +27,7 @@ winnerImg.style.boxShadow = "0px 0px 0px 0px black";
 
 let playerName1 = document.getElementById("playerBox1");
 let playerName2 = document.getElementById("playerBox2");
-playerName1.style.boxShadow = "0px 0px 10px 5px blue";
-
+playerName1.style.boxShadow = "0px 7px 0px 0px red";
 
 var iconCheck = 1;
 var iterCheck = 1;
@@ -72,8 +71,8 @@ function resultShow(winner) {
     }
     else {
         winnerName.innerHTML = "Both Players have Tie";
-        playerName1.style.boxShadow = "0px 0px 0px 0px blue";
-        playerName2.style.boxShadow = "0px 0px 0px 0px blue";
+        playerName1.style.boxShadow = "0px 0px 0px 0px black";
+        playerName2.style.boxShadow = "0px 0px 0px 0px black";
         winnerImg.style.boxShadow = "0 0 0 3px white";
     }
 
@@ -82,12 +81,12 @@ function resultShow(winner) {
 
 function userGlow() {
     if (iconCheck === 1) {
-        playerName1.style.boxShadow = "0px 0px 10px 5px blue";
-        playerName2.style.boxShadow = "0px 0px 0px 0px blue";
+        playerName1.style.boxShadow = "0px 7px 0px 0px red";
+        playerName2.style.boxShadow = "0px 0px 0px 0px black";
     }
     else {
-        playerName1.style.boxShadow = "0px 0px 0px 0px blue";
-        playerName2.style.boxShadow = "0px 0px 10px 5px blue";
+        playerName1.style.boxShadow = "0px 0px 0px 0px black";
+        playerName2.style.boxShadow = "0px 7px 0px 0px rgb(0, 247, 255)";
     }
 }
 
@@ -400,8 +399,8 @@ function boxShow1(box) {
     }
     iterCheck += 1;
 
-    winner();
     userGlow();
+    winner();
 }
 
 function gameReset() {
@@ -450,8 +449,8 @@ function gameReset() {
     img1 = winnerImg.querySelectorAll('img');
     img1.forEach(img => winnerImg.removeChild(img));
 
-    playerName1.style.boxShadow = "0px 0px 10px 5px blue";
-    playerName2.style.boxShadow = "0px 0px 0px 0px blue";
+    playerName1.style.boxShadow = "0px 7px 0px 0px red";
+    playerName2.style.boxShadow = "0px 0px 0px 0px black";
     winnerImg.style.boxShadow = "0px 0px 0px 0px black";
 
     img1 = "null";
