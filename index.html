@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="logo">MARVELS</div>
+        <div class="logo">Tic Tac Toe</div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
@@ -47,7 +47,7 @@
                         <div class="player-image" style="width: 17px;">
                             <img src="images/cross.png" alt="">
                         </div>
-                        Player 1
+                        <div contenteditable="True">Player 1</div>
                     </div>
                     <div class="score" id="playerScore1">
                         0
@@ -58,7 +58,7 @@
                         <div class="player-image" style="width: 20px;">
                             <img src="images/circle.png" alt="">
                         </div>
-                        Player 2
+                        <div contenteditable="True">Player 2</div>
                     </div>
                     <div class="score" id="playerScore2">
                         0
@@ -124,8 +124,11 @@
                     </div>
                 </div>
                 <div class="button-box">
-                    <div class="reset-box" onclick="gameReset()">
-                        <div class="reset">Reset</div>
+                    <div class="button" class="reset" onclick="gameReset()">
+                        <div>Clear</div>
+                    </div>
+                    <div class="button restart" onclick="gameRestart()">
+                        <div>Restart</div>
                     </div>
                 </div>
             </div>

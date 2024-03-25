@@ -467,4 +467,8 @@ function gameReset() {
     iterCheck = 1;
     crossImage = "images/cross.png";
     circleImage = "images/circle.png";
-} 
+}
+
+function gameRestart() {
+    document.location.reload();
+}
